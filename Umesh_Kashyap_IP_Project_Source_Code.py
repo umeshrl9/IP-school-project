@@ -131,6 +131,7 @@ def analyse_data():
         print(dfmax)
     elif ch==8:
         main_menu()
+    main_menu()
 
 def visualise_data():
     df=pd.read_csv(r"C:\Users\Umesh\Desktop\IP PROJECT\PCA_AY_2011_Revised.csv",
@@ -248,6 +249,8 @@ def visualise_data():
     elif ch==8:
         main_menu()
 
+    main_menu()
+
 def manipulate_menu():
     print(manipulate)
     df=pd.read_csv(r"C:\Users\Umesh\Desktop\IP PROJECT\PCA_AY_2011_Revised.csv",
@@ -298,5 +301,7 @@ def manipulate_menu():
             ,index=False)
         elif o=="No":
             pass
+
+        main_menu()
 
 main_menu()
