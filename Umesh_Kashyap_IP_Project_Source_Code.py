@@ -42,8 +42,9 @@ manipulate= """\n \n ----------Manipulation Data Menu----------
 
 #Data Source OGD PCA_AY_2011_Revised
 #Selected columns are chosen
+
 def main_menu():
-    df=pd.read_csv(r"C:\Users\Umesh\Desktop\IP PROJECT\PCA_AY_2011_Revised.csv",
+    df=pd.read_csv(r"PCA_AY_2011_Revised.csv",
      usecols=["State Code","District Code", "Area Name","Total/ Rural/ Urban",
      "Adolescent and youth categories","Total Population - Persons",
      "Total Population - Males", "Total Population - Females",
@@ -66,7 +67,7 @@ def main_menu():
         sys.exit()
 
 def analyse_data():
-    df=pd.read_csv(r"C:\Users\Umesh\Desktop\IP PROJECT\PCA_AY_2011_Revised.csv",
+    df=pd.read_csv(r"PCA_AY_2011_Revised.csv",
      usecols=["State Code","District Code",
     "Area Name","Total/ Rural/ Urban","Adolescent and youth categories",
     "Total Population - Persons","Total Population - Males",
@@ -134,7 +135,7 @@ def analyse_data():
     main_menu()
 
 def visualise_data():
-    df=pd.read_csv(r"C:\Users\Umesh\Desktop\IP PROJECT\PCA_AY_2011_Revised.csv",
+    df=pd.read_csv(r"PCA_AY_2011_Revised.csv",
      usecols=["State Code","District Code",
     "Area Name","Total/ Rural/ Urban","Adolescent and youth categories",
     "Total Population - Persons","Total Population - Males",
@@ -253,7 +254,7 @@ def visualise_data():
 
 def manipulate_menu():
     print(manipulate)
-    df=pd.read_csv(r"C:\Users\Umesh\Desktop\IP PROJECT\PCA_AY_2011_Revised.csv",
+    df=pd.read_csv(r"PCA_AY_2011_Revised.csv",
      usecols=["State Code","District Code",
     "Area Name","Total/ Rural/ Urban","Adolescent and youth categories",
     "Total Population - Persons","Total Population - Males",
