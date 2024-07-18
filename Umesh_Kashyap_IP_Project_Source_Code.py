@@ -134,8 +134,8 @@ def visualise_data():
         &(df["Total/ Rural/ Urban"]=="Total"),
         ["Area Name","Adolescent and youth categories",
         "Main Worker - Agricultural labourers - Persons"]]
-        b=input("Which state graph do you want?(IN CAPITALS)")
-        df2=df1.loc[(df1["Area Name"].str.contains(b)),["Area Name",
+        b=input("Which state graph do you want?")
+        df2=df1.loc[(df1["Area Name"].str.contains(b.upper()),["Area Name",
         "Adolescent and youth categories","Main Worker - Agricultural labourers - Persons"]]
         print(df2)
         plt.plot(df2["Adolescent and youth categories"],df2["Main Worker - Agricultural labourers - Persons"]
@@ -150,8 +150,8 @@ def visualise_data():
         &(df["Total/ Rural/ Urban"]=="Total"),
         ["Area Name","Adolescent and youth categories",
         "Scheduled Tribe - Males"]]
-        b=input("Which state graph do you want?(IN CAPITALS)")
-        df2=df1.loc[(df1["Area Name"].str.contains(b)),["Area Name",
+        b=input("Which state graph do you want?")
+        df2=df1.loc[(df1["Area Name"].str.contains(b.upper()),["Area Name",
         "Adolescent and youth categories","Scheduled Tribe - Males"]]
         print(df2)
         plt.plot(df2["Adolescent and youth categories"],df2["Scheduled Tribe - Males"]
@@ -166,8 +166,8 @@ def visualise_data():
         &(df["Total/ Rural/ Urban"]=="Rural"),
         ["Area Name","Adolescent and youth categories",
         "Illiiterates - Total - Persons"]]
-        b=input("Which state graph do you want?(IN CAPITALS)")
-        df2=df1.loc[(df1["Area Name"].str.contains(b)),["Area Name",
+        b=input("Which state graph do you want?")
+        df2=df1.loc[(df1["Area Name"].str.contains(b.upper()),["Area Name",
         "Adolescent and youth categories","Illiiterates - Total - Persons"]]
         print(df2)
         plt.plot(df2["Adolescent and youth categories"],df2["Illiiterates - Total - Persons"])
@@ -206,8 +206,8 @@ def visualise_data():
         &(df["Total/ Rural/ Urban"]=="Total"),
         ["Area Name","Adolescent and youth categories",
         "Scheduled Caste - Persons"]]
-        b=input("Which state graph do you want?(IN CAPITALS)")
-        df2=df1.loc[(df1["Area Name"].str.contains(b)),["Area Name",
+        b=input("Which state graph do you want?")
+        df2=df1.loc[(df1["Area Name"].str.contains(b.upper()),["Area Name",
         "Adolescent and youth categories","Scheduled Caste - Persons"]]
         df2=df2.drop(["Area Name"],axis=1)
         df2.plot(kind="bar",x="Adolescent and youth categories",color="red",edgecolor="gold")
@@ -220,8 +220,8 @@ def visualise_data():
         &(df["Total/ Rural/ Urban"]=="Total"),
         ["Area Name","Adolescent and youth categories",
         "Illiiterates - Total - Females"]]
-        b=input("Which state graph do you want?(IN CAPITALS)")
-        df2=df1.loc[(df1["Area Name"].str.contains(b)),["Area Name",
+        b=input("Which state graph do you want?")
+        df2=df1.loc[(df1["Area Name"].str.contains(b.upper()),["Area Name",
         "Adolescent and youth categories","Illiiterates - Total - Females"]]
         df2=df2.drop(["Area Name"],axis=1)
         print(df2)
