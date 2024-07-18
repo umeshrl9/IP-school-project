@@ -236,6 +236,14 @@ def visualise_data():
     main_menu()
 
 def manipulate_menu():
+    df=pd.read_csv(r"PCA_AY_2011_Revised.csv",
+     usecols=["State Code","District Code", "Area Name","Total/ Rural/ Urban",
+     "Adolescent and youth categories","Total Population - Persons",
+     "Total Population - Males", "Total Population - Females",
+     "Scheduled Caste - Persons","Scheduled Tribe - Persons",
+     "Scheduled Tribe - Males", "Illiiterates - Total - Persons",
+     "Illiiterates - Total - Males","Illiiterates - Total - Females",
+     "Main Worker - Agricultural labourers - Persons"])
     print(manipulate)
     ch=int(input("Enter choice"))
     if ch==1:
@@ -261,20 +269,20 @@ def manipulate_menu():
         df.loc[-1]=l1
         print("DataFrame is updated")
         o=input("Do you want to update in CSV? (Yes/No)")
-        if o=="Yes":
+        if o.upper()=="YES":
             df.to_csv(r"C:\Users\Student\Desktop\IP PROJECT\PCA_AY_2011_Revised.csv"
             ,index=False)
-        elif o=="No":
+        elif o.upper()=="NO":
             pass
     elif ch==2:
         a=int(input("Enter index number of the record to be removed"))
         df=df.drop([a],axis=0)
         print("DataFrame is updated")
         o=input("Do you want to update in CSV? (Yes/No)")
-        if o=="Yes":
+        if o.upper()=="YES":
             df.to_csv(r"C:\Users\Student\Desktop\IP PROJECT\PCA_AY_2011_Revised.csv"
             ,index=False)
-        elif o=="No":
+        elif o.upper()=="NO":
             pass
 
         main_menu()
