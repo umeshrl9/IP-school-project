@@ -43,8 +43,7 @@ manipulate= """\n \n ----------Manipulation Data Menu----------
 #Data Source OGD PCA_AY_2011_Revised
 #Selected columns are chosen
 
-def main_menu():
-    df=pd.read_csv(r"PCA_AY_2011_Revised.csv",
+df=pd.read_csv(r"PCA_AY_2011_Revised.csv",
      usecols=["State Code","District Code", "Area Name","Total/ Rural/ Urban",
      "Adolescent and youth categories","Total Population - Persons",
      "Total Population - Males", "Total Population - Females",
@@ -52,6 +51,8 @@ def main_menu():
      "Scheduled Tribe - Males", "Illiiterates - Total - Persons",
      "Illiiterates - Total - Males","Illiiterates - Total - Females",
      "Main Worker - Agricultural labourers - Persons"])
+
+def main_menu():
     print(main)
     ch=int(input("Enter choice"))
     if ch==1:
@@ -67,15 +68,6 @@ def main_menu():
         sys.exit()
 
 def analyse_data():
-    df=pd.read_csv(r"PCA_AY_2011_Revised.csv",
-     usecols=["State Code","District Code",
-    "Area Name","Total/ Rural/ Urban","Adolescent and youth categories",
-    "Total Population - Persons","Total Population - Males",
-    "Total Population - Females","Scheduled Caste - Persons",
-    "Scheduled Tribe - Persons","Scheduled Tribe - Males",
-    "Illiiterates - Total - Persons","Illiiterates - Total - Males",
-    "Illiiterates - Total - Females",
-    "Main Worker - Agricultural labourers - Persons"])
     print(analyse)
     ch=int(input("Enter choice"))
     if ch==1:
@@ -135,15 +127,6 @@ def analyse_data():
     main_menu()
 
 def visualise_data():
-    df=pd.read_csv(r"PCA_AY_2011_Revised.csv",
-     usecols=["State Code","District Code",
-    "Area Name","Total/ Rural/ Urban","Adolescent and youth categories",
-    "Total Population - Persons","Total Population - Males",
-    "Total Population - Females","Scheduled Caste - Persons",
-    "Scheduled Tribe - Persons","Scheduled Tribe - Males",
-    "Illiiterates - Total - Persons","Illiiterates - Total - Males",
-    "Illiiterates - Total - Females",
-    "Main Worker - Agricultural labourers - Persons"])
     print(visualize)
     ch=int(input("Enter choice"))
     if ch==1:
@@ -254,15 +237,6 @@ def visualise_data():
 
 def manipulate_menu():
     print(manipulate)
-    df=pd.read_csv(r"PCA_AY_2011_Revised.csv",
-     usecols=["State Code","District Code",
-    "Area Name","Total/ Rural/ Urban","Adolescent and youth categories",
-    "Total Population - Persons","Total Population - Males",
-    "Total Population - Females","Scheduled Caste - Persons",
-    "Scheduled Tribe - Persons","Scheduled Tribe - Males",
-    "Illiiterates - Total - Persons","Illiiterates - Total - Males",
-    "Illiiterates - Total - Females",
-    "Main Worker - Agricultural labourers - Persons"])
     ch=int(input("Enter choice"))
     if ch==1:
         a1=int(input('State Code'))
